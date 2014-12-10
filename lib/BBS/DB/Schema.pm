@@ -13,4 +13,16 @@ table {
     columns qw(id name);
 };
 
+table {
+  name 'sessions';
+  pk 'id';
+  columns qw(session_data);
+};
+
+table {
+  name 'entry';
+  pk 'entry_id';
+  columns qw(entry_id body);
+};
+
 1;
